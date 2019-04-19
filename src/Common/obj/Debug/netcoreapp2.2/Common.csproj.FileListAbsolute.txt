@@ -1,0 +1,26 @@
+E:\刘迪\个人文件\TestProject\TestModelBuild\CodeBuildSolution\src\Common\bin\Debug\netcoreapp2.2\Common.deps.json
+E:\刘迪\个人文件\TestProject\TestModelBuild\CodeBuildSolution\src\Common\bin\Debug\netcoreapp2.2\Common.dll
+E:\刘迪\个人文件\TestProject\TestModelBuild\CodeBuildSolution\src\Common\obj\Debug\netcoreapp2.2\Common.csproj.CoreCompileInputs.cache
+E:\刘迪\个人文件\TestProject\TestModelBuild\CodeBuildSolution\src\Common\obj\Debug\netcoreapp2.2\Common.AssemblyInfoInputs.cache
+E:\刘迪\个人文件\TestProject\TestModelBuild\CodeBuildSolution\src\Common\obj\Debug\netcoreapp2.2\Common.AssemblyInfo.cs
+E:\刘迪\个人文件\TestProject\TestModelBuild\CodeBuildSolution\src\Common\bin\Debug\netcoreapp2.2\Common.pdb
+E:\刘迪\个人文件\TestProject\TestModelBuild\CodeBuildSolution\src\Common\obj\Debug\netcoreapp2.2\Common.dll
+E:\刘迪\个人文件\TestProject\TestModelBuild\CodeBuildSolution\src\Common\obj\Debug\netcoreapp2.2\Common.pdb
+E:\刘迪\个人文件\TestProject\TestModelBuild\CodeBuildSolution\src\Common\obj\Debug\netcoreapp2.2\Common.csprojAssemblyReference.cache
+E:\刘迪\个人文件\TestProject\TestModelBuild\CodeBuildSolution\src\Common\bin\Debug\netcoreapp2.2\log4net_config.xml
+E:\刘迪\个人文件\TestProject\TestModelBuild\CodeBuildSolution\src\Common\bin\Debug\netcoreapp2.2\Log.dll
+E:\刘迪\个人文件\TestProject\TestModelBuild\CodeBuildSolution\src\Common\bin\Debug\netcoreapp2.2\Log.pdb
+E:\刘迪\个人文件\TestProject\TestModelBuild\CodeBuildSolution\src\Common\obj\Debug\netcoreapp2.2\Common.csproj.CopyComplete
+F:\学习\.Net Core\Asp.Net Core\Code\CodeBuild\CodeBuildSolution\src\Common\bin\Debug\netcoreapp2.2\log4net_config.xml
+F:\学习\.Net Core\Asp.Net Core\Code\CodeBuild\CodeBuildSolution\src\Common\bin\Debug\netcoreapp2.2\Common.deps.json
+F:\学习\.Net Core\Asp.Net Core\Code\CodeBuild\CodeBuildSolution\src\Common\bin\Debug\netcoreapp2.2\Common.dll
+F:\学习\.Net Core\Asp.Net Core\Code\CodeBuild\CodeBuildSolution\src\Common\bin\Debug\netcoreapp2.2\Common.pdb
+F:\学习\.Net Core\Asp.Net Core\Code\CodeBuild\CodeBuildSolution\src\Common\bin\Debug\netcoreapp2.2\Log.dll
+F:\学习\.Net Core\Asp.Net Core\Code\CodeBuild\CodeBuildSolution\src\Common\bin\Debug\netcoreapp2.2\Log.pdb
+F:\学习\.Net Core\Asp.Net Core\Code\CodeBuild\CodeBuildSolution\src\Common\obj\Debug\netcoreapp2.2\Common.csprojAssemblyReference.cache
+F:\学习\.Net Core\Asp.Net Core\Code\CodeBuild\CodeBuildSolution\src\Common\obj\Debug\netcoreapp2.2\Common.csproj.CoreCompileInputs.cache
+F:\学习\.Net Core\Asp.Net Core\Code\CodeBuild\CodeBuildSolution\src\Common\obj\Debug\netcoreapp2.2\Common.AssemblyInfoInputs.cache
+F:\学习\.Net Core\Asp.Net Core\Code\CodeBuild\CodeBuildSolution\src\Common\obj\Debug\netcoreapp2.2\Common.AssemblyInfo.cs
+F:\学习\.Net Core\Asp.Net Core\Code\CodeBuild\CodeBuildSolution\src\Common\obj\Debug\netcoreapp2.2\Common.csproj.CopyComplete
+F:\学习\.Net Core\Asp.Net Core\Code\CodeBuild\CodeBuildSolution\src\Common\obj\Debug\netcoreapp2.2\Common.dll
+F:\学习\.Net Core\Asp.Net Core\Code\CodeBuild\CodeBuildSolution\src\Common\obj\Debug\netcoreapp2.2\Common.pdb
