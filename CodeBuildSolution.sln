@@ -25,9 +25,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Model", "2. Model", "{AD
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Model", "src\Model\Model.csproj", "{C18ED4B8-0FAF-4843-853E-9F7A69CF77A2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tips", "src\Tips\Tips.csproj", "{EEC010CF-EF57-464F-98D3-8B41201E302D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tips", "src\Tips\Tips.csproj", "{EEC010CF-EF57-464F-98D3-8B41201E302D}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Util", "src\Util\Util.csproj", "{EC7686E9-7E24-4D4F-8D36-E0BD08DD3736}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "9. document", "9. document", "{933853C6-3689-44BD-A415-79C75C524BD2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "需求分析", "需求分析", "{9185A1C8-2787-4F88-A7F8-02DD74E4C476}"
+	ProjectSection(SolutionItems) = preProject
+		C:\Users\Administrator\Desktop\需求分析文档.docx = C:\Users\Administrator\Desktop\需求分析文档.docx
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -80,6 +87,7 @@ Global
 		{C18ED4B8-0FAF-4843-853E-9F7A69CF77A2} = {ADAF16F8-91D4-44C4-99F5-A7986A9E65A6}
 		{EEC010CF-EF57-464F-98D3-8B41201E302D} = {2B81558B-B2DA-4909-BD0B-BC749B56F938}
 		{EC7686E9-7E24-4D4F-8D36-E0BD08DD3736} = {2B81558B-B2DA-4909-BD0B-BC749B56F938}
+		{9185A1C8-2787-4F88-A7F8-02DD74E4C476} = {933853C6-3689-44BD-A415-79C75C524BD2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2BC15082-B3A5-4D59-86AE-171F13225D5A}

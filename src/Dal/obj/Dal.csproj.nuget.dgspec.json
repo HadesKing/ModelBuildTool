@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "F:\\学习\\.Net Core\\Asp.Net Core\\Code\\CodeBuild\\CodeBuildSolution\\src\\Dal\\Dal.csproj": {}
+    "E:\\刘迪\\个人文件\\TestProject\\TestModelBuild\\Git-CodeBuildSolution\\ModelBuildTool\\src\\Dal\\Dal.csproj": {}
   },
   "projects": {
-    "F:\\学习\\.Net Core\\Asp.Net Core\\Code\\CodeBuild\\CodeBuildSolution\\src\\Dal\\Dal.csproj": {
+    "E:\\刘迪\\个人文件\\TestProject\\TestModelBuild\\Git-CodeBuildSolution\\ModelBuildTool\\src\\Dal\\Dal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\学习\\.Net Core\\Asp.Net Core\\Code\\CodeBuild\\CodeBuildSolution\\src\\Dal\\Dal.csproj",
+        "projectUniqueName": "E:\\刘迪\\个人文件\\TestProject\\TestModelBuild\\Git-CodeBuildSolution\\ModelBuildTool\\src\\Dal\\Dal.csproj",
         "projectName": "Dal",
-        "projectPath": "F:\\学习\\.Net Core\\Asp.Net Core\\Code\\CodeBuild\\CodeBuildSolution\\src\\Dal\\Dal.csproj",
-        "packagesPath": "C:\\Users\\Aarion\\.nuget\\packages\\",
-        "outputPath": "F:\\学习\\.Net Core\\Asp.Net Core\\Code\\CodeBuild\\CodeBuildSolution\\src\\Dal\\obj\\",
+        "projectPath": "E:\\刘迪\\个人文件\\TestProject\\TestModelBuild\\Git-CodeBuildSolution\\ModelBuildTool\\src\\Dal\\Dal.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "E:\\刘迪\\个人文件\\TestProject\\TestModelBuild\\Git-CodeBuildSolution\\ModelBuildTool\\src\\Dal\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Aarion\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -30,11 +30,11 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "F:\\学习\\.Net Core\\Asp.Net Core\\Code\\CodeBuild\\CodeBuildSolution\\src\\Log\\Log.csproj": {
-                "projectPath": "F:\\学习\\.Net Core\\Asp.Net Core\\Code\\CodeBuild\\CodeBuildSolution\\src\\Log\\Log.csproj"
+              "E:\\刘迪\\个人文件\\TestProject\\TestModelBuild\\Git-CodeBuildSolution\\ModelBuildTool\\src\\Log\\Log.csproj": {
+                "projectPath": "E:\\刘迪\\个人文件\\TestProject\\TestModelBuild\\Git-CodeBuildSolution\\ModelBuildTool\\src\\Log\\Log.csproj"
               },
-              "F:\\学习\\.Net Core\\Asp.Net Core\\Code\\CodeBuild\\CodeBuildSolution\\src\\Model\\Model.csproj": {
-                "projectPath": "F:\\学习\\.Net Core\\Asp.Net Core\\Code\\CodeBuild\\CodeBuildSolution\\src\\Model\\Model.csproj"
+              "E:\\刘迪\\个人文件\\TestProject\\TestModelBuild\\Git-CodeBuildSolution\\ModelBuildTool\\src\\Model\\Model.csproj": {
+                "projectPath": "E:\\刘迪\\个人文件\\TestProject\\TestModelBuild\\Git-CodeBuildSolution\\ModelBuildTool\\src\\Model\\Model.csproj"
               }
             }
           }
@@ -71,20 +71,20 @@
         }
       }
     },
-    "F:\\学习\\.Net Core\\Asp.Net Core\\Code\\CodeBuild\\CodeBuildSolution\\src\\Log\\Log.csproj": {
+    "E:\\刘迪\\个人文件\\TestProject\\TestModelBuild\\Git-CodeBuildSolution\\ModelBuildTool\\src\\Log\\Log.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\学习\\.Net Core\\Asp.Net Core\\Code\\CodeBuild\\CodeBuildSolution\\src\\Log\\Log.csproj",
+        "projectUniqueName": "E:\\刘迪\\个人文件\\TestProject\\TestModelBuild\\Git-CodeBuildSolution\\ModelBuildTool\\src\\Log\\Log.csproj",
         "projectName": "Log",
-        "projectPath": "F:\\学习\\.Net Core\\Asp.Net Core\\Code\\CodeBuild\\CodeBuildSolution\\src\\Log\\Log.csproj",
-        "packagesPath": "C:\\Users\\Aarion\\.nuget\\packages\\",
-        "outputPath": "F:\\学习\\.Net Core\\Asp.Net Core\\Code\\CodeBuild\\CodeBuildSolution\\src\\Log\\obj\\",
+        "projectPath": "E:\\刘迪\\个人文件\\TestProject\\TestModelBuild\\Git-CodeBuildSolution\\ModelBuildTool\\src\\Log\\Log.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "E:\\刘迪\\个人文件\\TestProject\\TestModelBuild\\Git-CodeBuildSolution\\ModelBuildTool\\src\\Log\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Aarion\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -131,20 +131,20 @@
         }
       }
     },
-    "F:\\学习\\.Net Core\\Asp.Net Core\\Code\\CodeBuild\\CodeBuildSolution\\src\\Model\\Model.csproj": {
+    "E:\\刘迪\\个人文件\\TestProject\\TestModelBuild\\Git-CodeBuildSolution\\ModelBuildTool\\src\\Model\\Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\学习\\.Net Core\\Asp.Net Core\\Code\\CodeBuild\\CodeBuildSolution\\src\\Model\\Model.csproj",
+        "projectUniqueName": "E:\\刘迪\\个人文件\\TestProject\\TestModelBuild\\Git-CodeBuildSolution\\ModelBuildTool\\src\\Model\\Model.csproj",
         "projectName": "Model",
-        "projectPath": "F:\\学习\\.Net Core\\Asp.Net Core\\Code\\CodeBuild\\CodeBuildSolution\\src\\Model\\Model.csproj",
-        "packagesPath": "C:\\Users\\Aarion\\.nuget\\packages\\",
-        "outputPath": "F:\\学习\\.Net Core\\Asp.Net Core\\Code\\CodeBuild\\CodeBuildSolution\\src\\Model\\obj\\",
+        "projectPath": "E:\\刘迪\\个人文件\\TestProject\\TestModelBuild\\Git-CodeBuildSolution\\ModelBuildTool\\src\\Model\\Model.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "E:\\刘迪\\个人文件\\TestProject\\TestModelBuild\\Git-CodeBuildSolution\\ModelBuildTool\\src\\Model\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Aarion\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
