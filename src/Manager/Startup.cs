@@ -85,9 +85,24 @@ namespace Manager
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
+
+            /*
+             * 程序报错处理
+             * 资料：
+             * https://docs.microsoft.com/zh-cn/aspnet/core/fundamentals/error-handling?view=aspnetcore-2.2
+             */
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                /*
+                 * 启用常见错误状态代码的默认纯文本处理程序
+                 * 资料：
+                 * https://docs.microsoft.com/zh-cn/dotnet/api/microsoft.aspnetcore.builder.statuscodepagesextensions.usestatuscodepages?view=aspnetcore-2.2
+                 * 使用方式资料：
+                 * https://docs.microsoft.com/zh-cn/aspnet/core/fundamentals/error-handling?view=aspnetcore-2.2
+                 */
+                app.UseStatusCodePages();
+                app.UseDatabaseErrorPage();
             }
             else
             {

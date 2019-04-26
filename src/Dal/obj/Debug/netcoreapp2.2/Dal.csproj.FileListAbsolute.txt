@@ -28,3 +28,18 @@ F:\学习\.Net Core\Asp.Net Core\Code\CodeBuild\CodeBuildSolution\src\Dal\obj\De
 F:\学习\.Net Core\Asp.Net Core\Code\CodeBuild\CodeBuildSolution\src\Dal\obj\Debug\netcoreapp2.2\Dal.csproj.CopyComplete
 F:\学习\.Net Core\Asp.Net Core\Code\CodeBuild\CodeBuildSolution\src\Dal\obj\Debug\netcoreapp2.2\Dal.dll
 F:\学习\.Net Core\Asp.Net Core\Code\CodeBuild\CodeBuildSolution\src\Dal\obj\Debug\netcoreapp2.2\Dal.pdb
+E:\刘迪\个人文件\TestProject\TestModelBuild\Git-CodeBuildSolution\ModelBuildTool\src\Dal\bin\Debug\netcoreapp2.2\log4net_config.xml
+E:\刘迪\个人文件\TestProject\TestModelBuild\Git-CodeBuildSolution\ModelBuildTool\src\Dal\bin\Debug\netcoreapp2.2\Dal.deps.json
+E:\刘迪\个人文件\TestProject\TestModelBuild\Git-CodeBuildSolution\ModelBuildTool\src\Dal\bin\Debug\netcoreapp2.2\Dal.dll
+E:\刘迪\个人文件\TestProject\TestModelBuild\Git-CodeBuildSolution\ModelBuildTool\src\Dal\bin\Debug\netcoreapp2.2\Dal.pdb
+E:\刘迪\个人文件\TestProject\TestModelBuild\Git-CodeBuildSolution\ModelBuildTool\src\Dal\bin\Debug\netcoreapp2.2\Log.dll
+E:\刘迪\个人文件\TestProject\TestModelBuild\Git-CodeBuildSolution\ModelBuildTool\src\Dal\bin\Debug\netcoreapp2.2\Model.dll
+E:\刘迪\个人文件\TestProject\TestModelBuild\Git-CodeBuildSolution\ModelBuildTool\src\Dal\bin\Debug\netcoreapp2.2\Log.pdb
+E:\刘迪\个人文件\TestProject\TestModelBuild\Git-CodeBuildSolution\ModelBuildTool\src\Dal\bin\Debug\netcoreapp2.2\Model.pdb
+E:\刘迪\个人文件\TestProject\TestModelBuild\Git-CodeBuildSolution\ModelBuildTool\src\Dal\obj\Debug\netcoreapp2.2\Dal.csprojAssemblyReference.cache
+E:\刘迪\个人文件\TestProject\TestModelBuild\Git-CodeBuildSolution\ModelBuildTool\src\Dal\obj\Debug\netcoreapp2.2\Dal.csproj.CoreCompileInputs.cache
+E:\刘迪\个人文件\TestProject\TestModelBuild\Git-CodeBuildSolution\ModelBuildTool\src\Dal\obj\Debug\netcoreapp2.2\Dal.AssemblyInfoInputs.cache
+E:\刘迪\个人文件\TestProject\TestModelBuild\Git-CodeBuildSolution\ModelBuildTool\src\Dal\obj\Debug\netcoreapp2.2\Dal.AssemblyInfo.cs
+E:\刘迪\个人文件\TestProject\TestModelBuild\Git-CodeBuildSolution\ModelBuildTool\src\Dal\obj\Debug\netcoreapp2.2\Dal.csproj.CopyComplete
+E:\刘迪\个人文件\TestProject\TestModelBuild\Git-CodeBuildSolution\ModelBuildTool\src\Dal\obj\Debug\netcoreapp2.2\Dal.dll
+E:\刘迪\个人文件\TestProject\TestModelBuild\Git-CodeBuildSolution\ModelBuildTool\src\Dal\obj\Debug\netcoreapp2.2\Dal.pdb
