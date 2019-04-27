@@ -1,4 +1,5 @@
 # ModelBuildTool
+本质是一个 asp.net core 学习项目，尽量每一行代码都有注释。
 
 网页版代码生成器<br/>
 最终目标：
