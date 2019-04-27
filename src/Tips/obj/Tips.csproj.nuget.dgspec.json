@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "E:\\刘迪\\个人文件\\TestProject\\TestModelBuild\\Git-CodeBuildSolution\\ModelBuildTool\\src\\Tips\\Tips.csproj": {}
+    "F:\\学习\\.Net Core\\Asp.Net Core\\Code\\CodeBuild\\CodeBuildSolution\\ModelBuildTool\\src\\Tips\\Tips.csproj": {}
   },
   "projects": {
-    "E:\\刘迪\\个人文件\\TestProject\\TestModelBuild\\Git-CodeBuildSolution\\ModelBuildTool\\src\\Tips\\Tips.csproj": {
+    "F:\\学习\\.Net Core\\Asp.Net Core\\Code\\CodeBuild\\CodeBuildSolution\\ModelBuildTool\\src\\Tips\\Tips.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\刘迪\\个人文件\\TestProject\\TestModelBuild\\Git-CodeBuildSolution\\ModelBuildTool\\src\\Tips\\Tips.csproj",
+        "projectUniqueName": "F:\\学习\\.Net Core\\Asp.Net Core\\Code\\CodeBuild\\CodeBuildSolution\\ModelBuildTool\\src\\Tips\\Tips.csproj",
         "projectName": "Tips",
-        "projectPath": "E:\\刘迪\\个人文件\\TestProject\\TestModelBuild\\Git-CodeBuildSolution\\ModelBuildTool\\src\\Tips\\Tips.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "E:\\刘迪\\个人文件\\TestProject\\TestModelBuild\\Git-CodeBuildSolution\\ModelBuildTool\\src\\Tips\\obj\\",
+        "projectPath": "F:\\学习\\.Net Core\\Asp.Net Core\\Code\\CodeBuild\\CodeBuildSolution\\ModelBuildTool\\src\\Tips\\Tips.csproj",
+        "packagesPath": "C:\\Users\\Aarion\\.nuget\\packages\\",
+        "outputPath": "F:\\学习\\.Net Core\\Asp.Net Core\\Code\\CodeBuild\\CodeBuildSolution\\ModelBuildTool\\src\\Tips\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Aarion\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
