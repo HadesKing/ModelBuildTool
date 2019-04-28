@@ -33,7 +33,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "9. document", "9. document"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "需求分析", "需求分析", "{9185A1C8-2787-4F88-A7F8-02DD74E4C476}"
 	ProjectSection(SolutionItems) = preProject
-		C:\Users\Administrator\Desktop\需求分析文档.docx = C:\Users\Administrator\Desktop\需求分析文档.docx
+		document\需求分析\需求分析文档V1.0.docx = document\需求分析\需求分析文档V1.0.docx
 	EndProjectSection
 EndProject
 Global
