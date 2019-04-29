@@ -36,6 +36,20 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "需求分析", "需求分�
 		document\需求分析\需求分析文档V1.0.docx = document\需求分析\需求分析文档V1.0.docx
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IDal", "src\IDal\IDal.csproj", "{C1AFCFCB-1645-4D09-83B8-AC9789884004}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "8. database", "8. database", "{E4FB5F06-96FD-4473-8456-9BDAF3BF3B26}"
+	ProjectSection(SolutionItems) = preProject
+		database\DatabaseReadMe.txt = database\DatabaseReadMe.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SQL", "SQL", "{39863228-88D8-4E1A-A2C5-A41892E32854}"
+	ProjectSection(SolutionItems) = preProject
+		database\SQL\sql.sql = database\SQL\sql.sql
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "File", "File", "{332997CD-1D51-4103-A459-F6AC0E54EF4D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -74,6 +88,10 @@ Global
 		{EC7686E9-7E24-4D4F-8D36-E0BD08DD3736}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC7686E9-7E24-4D4F-8D36-E0BD08DD3736}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC7686E9-7E24-4D4F-8D36-E0BD08DD3736}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1AFCFCB-1645-4D09-83B8-AC9789884004}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1AFCFCB-1645-4D09-83B8-AC9789884004}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1AFCFCB-1645-4D09-83B8-AC9789884004}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1AFCFCB-1645-4D09-83B8-AC9789884004}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -88,6 +106,9 @@ Global
 		{EEC010CF-EF57-464F-98D3-8B41201E302D} = {2B81558B-B2DA-4909-BD0B-BC749B56F938}
 		{EC7686E9-7E24-4D4F-8D36-E0BD08DD3736} = {2B81558B-B2DA-4909-BD0B-BC749B56F938}
 		{9185A1C8-2787-4F88-A7F8-02DD74E4C476} = {933853C6-3689-44BD-A415-79C75C524BD2}
+		{C1AFCFCB-1645-4D09-83B8-AC9789884004} = {B3C71663-76AA-4A14-A4D1-6C37DDF0A460}
+		{39863228-88D8-4E1A-A2C5-A41892E32854} = {E4FB5F06-96FD-4473-8456-9BDAF3BF3B26}
+		{332997CD-1D51-4103-A459-F6AC0E54EF4D} = {E4FB5F06-96FD-4473-8456-9BDAF3BF3B26}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2BC15082-B3A5-4D59-86AE-171F13225D5A}
