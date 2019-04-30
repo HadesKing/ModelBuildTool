@@ -20,14 +20,19 @@ namespace Model.DbConfig
     {
         public DbConnectionString()
         {
-
+            IsEnable = 1;
         }
 
         /// <summary>
         /// 自增字段
         /// </summary>
         public String Id { get; set; }
-
+        
+        /// <summary>
+        /// 身份标识
+        /// </summary>
+        public String Identity { get; set; }
+        
         /// <summary>
         /// 配置名称
         /// </summary>
@@ -36,12 +41,12 @@ namespace Model.DbConfig
         /// <summary>
         /// 数据库名称
         /// </summary>
-        public String Dbname { get; set; }
+        public String DbName { get; set; }
 
         /// <summary>
         /// 数据库类型
         /// </summary>
-        public String Dbtype { get; set; }
+        public String DbType { get; set; }
 
         /// <summary>
         /// 描述信息
@@ -77,6 +82,31 @@ namespace Model.DbConfig
         /// 密码
         /// </summary>
         public String Password { get; set; }
+
+        /// <summary>
+        /// 是否启用
+        /// </summary>
+        public Int32 IsEnable { get; set; }
+
+        /// <summary>
+        /// 创建时间
+        /// </summary>
+        public DateTime CreateTime { get; set; }
+
+        /// <summary>
+        /// 创建人
+        /// </summary>
+        public String CreateBy { get; set; }
+
+        /// <summary>
+        /// 最后修改时间
+        /// </summary>
+        public DateTime LastUpdateTime { get; set; }
+
+        /// <summary>
+        /// 修改人
+        /// </summary>
+        public String UpdateBy { get; set; }
 
 
     }
