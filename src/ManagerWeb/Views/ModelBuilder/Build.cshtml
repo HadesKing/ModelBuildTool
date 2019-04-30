@@ -58,9 +58,9 @@
                 <a href="javascript:void(0);" onclick="CopyCode(this)" title="复制代码">
                     <img src="@Url.Content("~/image/copycode.gif")" alt="复制代码">
                 </a>
-                <span style="padding-left: 5px;">鼠标点击代码，然后按键Ctrl+A</span>
+                <span style="padding-left: 5px;">Ctrl+A</span>
             </span>
-            <textarea id="ttCode" class="form-control" rows="@(Model.Columns.Count * 6)" style="        display: none;" readonly></textarea>
+            <textarea id="ttCode" class="form-control" rows="@(Model.Columns.Count * 6)" style="display: none;" readonly></textarea>
             <pre id="code">
             using System;
             using System.Collections.Generic;
@@ -94,9 +94,14 @@
                 ttCodeVal = code.replace(/<span>/g, "").replace(/<\/span>/g, "").replace(/&lt;/g, "<").replace(/&gt;/g, ">");
                 $("#ttCode").val(ttCodeVal);
             }
-            var url = $(dom).prev();
-            url.select();
-            document.execCommand("Copy");
+
+            //var url = $(dom).prev();
+            //url.select();
+            //document.execCommand("Copy");
+            var code = document.getElementById("ttCode");
+            code.focus();
+            code.select();
+            return true;
         }
         //显示代码
         function ShowCode() {
