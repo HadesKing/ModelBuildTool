@@ -1,0 +1,5 @@
+﻿				
+				/// <summary>
+				/// $description$
+				/// </summary>
+				public $datatype$ $propertyname$ { get; set; }

@@ -1,19 +1,25 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
-using System.Text;
-using Dapper;
 using System.Data;
-using MySql.Data.MySqlClient;
+using System.Text;
 
 namespace Dal
 {
 
     /// <summary>
-    /// mysql 数据库操作基类
+    /// ModelBuild 数据库访问层
     /// </summary>
-    public abstract class BaseMySqlDal : BaseDal
+    /// <remarks>
+    /// 
+    /// </remarks>
+    /// <author>刘迪</author>
+    /// <createtime>2019-05-01</createtime>
+    /// <updator></updator>
+    /// <updatetime></updatetime>
+    /// <description></description>
+    public abstract class BaseModelBuildDal : BaseDal
     {
-
         /// <summary>
         /// 获取数据库连接
         /// </summary>
@@ -38,7 +44,7 @@ namespace Dal
                 if (argIsOpen)
                     dbConnection.Open();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 if (null != dbConnection && dbConnection.State != ConnectionState.Closed)
                     dbConnection.Close();
@@ -47,8 +53,6 @@ namespace Dal
 
             return dbConnection;
         }
-
-
 
     }
 }

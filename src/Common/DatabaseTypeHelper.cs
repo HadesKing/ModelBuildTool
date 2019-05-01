@@ -7,12 +7,54 @@ namespace Common
 {
     public sealed class DatabaseTypeHelper
     {
+        /// <summary>
+        /// mysql 类型 转换
+        /// </summary>
+        /// <param name="argDatabaseType"></param>
+        /// <returns></returns>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <author>刘迪</author>
+        /// <createtime>2019-05-01</createtime>
+        /// <updator></updator>
+        /// <updatetime></updatetime>
+        /// <description></description>
+        private static String MySqlTypeConvert(String argDatabaseType)
+        {
+            String strReturn = null;
+            switch(argDatabaseType.ToLower())
+            {
+                case "bit":
+                    strReturn = DbType.SByte.ToString();
+                    break;
+                case "smallint":
+                    strReturn = DbType.Int16.ToString();
+                    break;
+            }
+            return strReturn;
+        }
 
-        public static String ConvertToString(String argDatabaseType, bool argIsNullable = false)
+        /// <summary>
+        /// 数据库类型转换成字符串
+        /// </summary>
+        /// <param name="argDatabaseType">数据库类型</param>
+        /// <param name="argIsNullable">数据库列字段是否可以为NULL</param>
+        /// <returns></returns>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <author>刘迪</author>
+        /// <createtime>2019-05-01</createtime>
+        /// <updator></updator>
+        /// <updatetime></updatetime>
+        /// <description></description>
+        public static String DbTypeConvertToString(String argDatabaseType, bool argIsNullable = false)
         {
             if (String.IsNullOrWhiteSpace(argDatabaseType)) return "String";
 
-            String strReturn = null;
+            String strReturn = MySqlTypeConvert(argDatabaseType);
+            if (!String.IsNullOrWhiteSpace(strReturn)) return strReturn;
             //DbType dbType = (DbType)Enum.Parse(typeof(DbType), argDatabaseType, true);
             //Log.LogHelper.Debug(argDatabaseType);
             DbType dbType = EnumHelper.Get(typeof(DbType), argDatabaseType, DbType.AnsiString);

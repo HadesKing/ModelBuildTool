@@ -6,6 +6,8 @@
 
 CREATE DATABASE CodeBuild;
 
+USE CodeBuild;
+
 CREATE TABLE 
   `codebuild`.`DbConnectionString`(  
   `Id` BIGINT NOT NULL AUTO_INCREMENT COMMENT '×ÔÔö',
@@ -28,4 +30,20 @@ CREATE TABLE
   PRIMARY KEY (`id`)
 ) ENGINE=INNODB CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+CREATE TABLE `codebuild`.`ModelCodeTemplate`(  
+  `Id` BIGINT NOT NULL AUTO_INCREMENT,
+  `Identity` VARCHAR(64),
+  `Name` VARCHAR(128),
+  `AuthorInfo` VARCHAR(512),
+  `UsingInfo` VARCHAR(512),
+  `NamespaceInfo` VARCHAR(512),
+  `ClassInfo` VARCHAR(512),
+  `PropertyInfo` VARCHAR(512),
+  `IsEnable` SMALLINT,
+  `CreateTime` DATETIME,
+  `CreateBy` VARCHAR(64),
+  `LastUpdateTime` DATETIME,
+  `UpdateBy` VARCHAR(64),
+  PRIMARY KEY (`Id`)
+) ENGINE=INNODB CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 

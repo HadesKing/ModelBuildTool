@@ -6566,6 +6566,9 @@
 
 
   <ItemGroup>
+    <None Update="Templates\Model\PropertyCodeTemplate.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Update="Templates\PropertyCodeTemplate.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
