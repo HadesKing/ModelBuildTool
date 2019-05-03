@@ -2,11 +2,10 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace IDal.CodeTemplate
+namespace IDal
 {
-
     /// <summary>
-    /// Model 代码模板 数据访问层
+    /// 
     /// </summary>
     /// <remarks>
     /// 
@@ -16,13 +15,14 @@ namespace IDal.CodeTemplate
     /// <updator></updator>
     /// <updatetime></updatetime>
     /// <description></description>
-    public interface IModelCodeTemplateDal : IAdd, IDelete, IUpdate
+    public interface IUpdate
     {
-
         /// <summary>
-        /// 更新是否可用
+        /// 更新记录
         /// </summary>
-        /// <returns></returns>
+        /// <typeparam name="TEntity">记录类型</typeparam>
+        /// <param name="entity">需要更新的记录</param>
+        /// <returns>返回受影响的行数</returns>
         /// <remarks>
         /// 
         /// </remarks>
@@ -31,7 +31,7 @@ namespace IDal.CodeTemplate
         /// <updator></updator>
         /// <updatetime></updatetime>
         /// <description></description>
-        Int32 UpdateIsEnable<TEntity>(TEntity entity);
+        Int32 Update<TEntity>(TEntity entity);
 
     }
 }

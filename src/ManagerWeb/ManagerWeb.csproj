@@ -6551,8 +6551,12 @@
 
 
   <ItemGroup>
+    <ProjectReference Include="..\Bll\Bll.csproj" />
     <ProjectReference Include="..\Common\Common.csproj" />
+    <ProjectReference Include="..\Dal\Dal.csproj" />
     <ProjectReference Include="..\DataBll\DataBll.csproj" />
+    <ProjectReference Include="..\IDal\IDal.csproj" />
+    <ProjectReference Include="..\IDataBll\IDataBll.csproj" />
     <ProjectReference Include="..\Log\Log.csproj" />
     <ProjectReference Include="..\Model\Model.csproj" />
     <ProjectReference Include="..\Tips\Tips.csproj" />

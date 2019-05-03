@@ -99,7 +99,11 @@
         },
         "frameworks": {
           "netcoreapp2.2": {
-            "projectReferences": {}
+            "projectReferences": {
+              "F:\\学习\\.Net Core\\Asp.Net Core\\Code\\CodeBuild\\CodeBuildSolution\\ModelBuildTool\\src\\Model\\Model.csproj": {
+                "projectPath": "F:\\学习\\.Net Core\\Asp.Net Core\\Code\\CodeBuild\\CodeBuildSolution\\ModelBuildTool\\src\\Model\\Model.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

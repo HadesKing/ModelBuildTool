@@ -79,6 +79,12 @@ namespace ManagerWeb
             services.AddTransient<Util.JsonSerialize.IJsonSerialize, Util.JsonSerialize.NewtonsoftJsonSerialize>();
             services.AddTransient<Log.ILog, Log.Log4NetLogger>();
 
+            #region 【注入 数据操作类】
+            new ConfigService.DalDi(Configuration, services).Init();
+            new ConfigService.DataBllDi(Configuration, services).Init();
+            new ConfigService.BllDi(Configuration, services).Init();
+            #endregion
+
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 

@@ -1665,6 +1665,9 @@
       "IDal/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.2",
+        "dependencies": {
+          "Model": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/IDal.dll": {}
         },

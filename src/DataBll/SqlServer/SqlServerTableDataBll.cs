@@ -4,10 +4,21 @@ using System.Text;
 
 namespace DataBll.SqlServer
 {
-    public sealed class SqlServerTableDataBll
+    /// <summary>
+    /// SqlServer 表 数据业务逻辑处理层
+    /// </summary>
+    public sealed class SqlServerTableDataBll : IDataBll.SqlServer.ISqlServerTableDataBll
     {
+        /// <summary>
+        /// 构造函数
+        /// </summary>
+        /// <param name="argSqlServerTableDal"></param>
+        public SqlServerTableDataBll(IDal.SqlServer.ISqlServerTableDal argSqlServerTableDal)
+        {
+            SqlServerTableDal = argSqlServerTableDal;
+        }
 
-        private Dal.SqlServer.SqlServerTableDal dal = new Dal.SqlServer.SqlServerTableDal();
+        private IDal.SqlServer.ISqlServerTableDal SqlServerTableDal { get; set; }
         
         /// <summary>
         /// 获取所有数据库表名称
@@ -16,7 +27,7 @@ namespace DataBll.SqlServer
         public IList<String> Get(String argDbConnectString, String argDbName)
         {
             if (String.IsNullOrWhiteSpace(argDbConnectString) || String.IsNullOrWhiteSpace(argDbName)) return null;
-            return dal.Get(argDbConnectString, argDbName);
+            return SqlServerTableDal.Get(argDbConnectString, argDbName);
         }
         
         /// <summary>
@@ -27,7 +38,7 @@ namespace DataBll.SqlServer
         public IList<Model.SqlServer.SqlServerTableColumnInfo> GetColumns(String argDbConnectString, String argTableName)
         {
             if (String.IsNullOrWhiteSpace(argDbConnectString) || String.IsNullOrWhiteSpace(argTableName)) return null;
-            return dal.GetColumns(argDbConnectString, argTableName);
+            return SqlServerTableDal.GetColumns(argDbConnectString, argTableName);
         }
 
     }

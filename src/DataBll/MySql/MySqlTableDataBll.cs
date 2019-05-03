@@ -4,12 +4,25 @@ using System.Text;
 
 namespace DataBll.MySql
 {
-    public sealed class MySqlTableDataBll
+    /// <summary>
+    /// MySql 表 数据业务逻辑处理层
+    /// </summary>
+    public sealed class MySqlTableDataBll : IDataBll.MySql.IMySqlTableDataBll
     {
+        /// <summary>
+        /// 构造函数
+        /// </summary>
+        /// <param name="argMySqlTableDal"></param>
+        public MySqlTableDataBll(IDal.MySql.IMySqlTableDal argMySqlTableDal)
+        {
+            MySqlTableDal = argMySqlTableDal;
+        }
 
-        private Dal.MySql.MySqlTableDal dal = new Dal.MySql.MySqlTableDal();
-
-
+        /// <summary>
+        /// 
+        /// </summary>
+        private IDal.MySql.IMySqlTableDal MySqlTableDal { get; set; }
+        
         /// <summary>
         /// 获取表的详细信息
         /// </summary>
@@ -26,7 +39,7 @@ namespace DataBll.MySql
             )
                 return null;
 
-            return dal.Get(argDbConnectString, argDbName);
+            return MySqlTableDal.Get(argDbConnectString, argDbName);
         }
 
         /// <summary>
@@ -47,7 +60,7 @@ namespace DataBll.MySql
             )
                 return null;
 
-            return dal.GetColumnInfo(argDbConnectString, argDbName, argTableName);
+            return MySqlTableDal.GetColumnInfo(argDbConnectString, argDbName, argTableName);
         }
 
 

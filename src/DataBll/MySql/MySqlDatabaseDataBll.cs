@@ -7,10 +7,13 @@ namespace DataBll.MySql
     /// <summary>
     /// MySql 数据库 数据业务逻辑层
     /// </summary>
-    public sealed class MySqlDatabaseDataBll
+    public sealed class MySqlDatabaseDataBll : IDataBll.MySql.IMySqlDatabaseDataBll
     {
-
-        private Dal.MySql.MySqlDatabaseDal dal = new Dal.MySql.MySqlDatabaseDal();
+        public MySqlDatabaseDataBll(IDal.MySql.IMySqlDatabaseDal argMySqlDatabaseDal)
+        {
+            MySqlDatabaseDal = argMySqlDatabaseDal;
+        }
+        private IDal.MySql.IMySqlDatabaseDal MySqlDatabaseDal { get; set; }
 
         /// <summary>
         /// 获取所有数据库信息
@@ -19,7 +22,7 @@ namespace DataBll.MySql
         public IList<String> Get(String argDbConnectString)
         {
             if (String.IsNullOrEmpty(argDbConnectString)) return null;
-            return dal.Get(argDbConnectString);
+            return MySqlDatabaseDal.Get(argDbConnectString);
         }
 
         /// <summary>
@@ -32,7 +35,7 @@ namespace DataBll.MySql
         {
             if (String.IsNullOrEmpty(argDbConnectString) || String.IsNullOrEmpty(argDbName)) return null;
 
-            return dal.GetTableName(argDbConnectString, argDbName);
+            return MySqlDatabaseDal.GetTableName(argDbConnectString, argDbName);
         }
 
        

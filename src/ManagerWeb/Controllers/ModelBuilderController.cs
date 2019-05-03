@@ -12,6 +12,34 @@ namespace ManagerWeb.Controllers
 {
     public class ModelBuilderController : Controller
     {
+        private IDataBll.MySql.IMySqlTableDataBll MySqlTableDataBll { get; set; }
+
+        private IDataBll.MySql.IMySqlDatabaseDataBll MySqlDatabaseDataBll { get; set; }
+
+        private IDataBll.SqlServer.ISqlServerTableDataBll SqlServerTableDataBll { get; set; }
+
+        private IDataBll.SqlServer.ISqlServerDatabaseDataBll SqlServerDatabaseDataBll { get; set; }
+
+        public ModelBuilderController(
+            IDataBll.MySql.IMySqlDatabaseDataBll argMySqlDatabaseDataBll
+            , IDataBll.MySql.IMySqlTableDataBll argMySqlTableDataBll
+            , IDataBll.SqlServer.ISqlServerDatabaseDataBll argSqlServerDatabaseDataBll
+            , IDataBll.SqlServer.ISqlServerTableDataBll argSqlServerTableDataBll
+            )
+        {
+            MySqlDatabaseDataBll = argMySqlDatabaseDataBll;
+            MySqlTableDataBll = argMySqlTableDataBll;
+            SqlServerDatabaseDataBll = argSqlServerDatabaseDataBll;
+            SqlServerTableDataBll = argSqlServerTableDataBll;
+            /*
+             
+                    databases = new DataBll.MySql.MySqlDatabaseDataBll().Get(strConnectString);
+                    break;
+                case DatabaseType.SqlServer:
+                    databases = new DataBll.SqlServer.SqlServerDatabaseDataBll().Get(strConnectString);
+             */
+        }
+
         // GET: /<controller>/
         public IActionResult Index()
         {
@@ -81,10 +109,10 @@ namespace ManagerWeb.Controllers
             switch (model.DatabaseType)
             {
                 case DatabaseType.MySql:
-                    databases = new DataBll.MySql.MySqlDatabaseDataBll().Get(strConnectString);
+                    databases = MySqlDatabaseDataBll.Get(strConnectString);
                     break;
                 case DatabaseType.SqlServer:
-                    databases = new DataBll.SqlServer.SqlServerDatabaseDataBll().Get(strConnectString);
+                    databases = SqlServerDatabaseDataBll.Get(strConnectString);
                     break;
             }
 
@@ -106,14 +134,14 @@ namespace ManagerWeb.Controllers
             switch (model.DatabaseType)
             {
                 case DatabaseType.MySql:
-                    IList<Model.MySql.MySqlTableInfo> list1 = new DataBll.MySql.MySqlTableDataBll().Get(strConnectString, model.DatabaseName);
+                    IList<Model.MySql.MySqlTableInfo> list1 = MySqlTableDataBll.Get(strConnectString, model.DatabaseName);
                     if (null != list1 && list1.Count > 0)
                     {
                         tables = list1.Select(x => x.TABLE_NAME).ToList();
                     }
                     break;
                 case DatabaseType.SqlServer:
-                    tables = new DataBll.SqlServer.SqlServerTableDataBll().Get(strConnectString, model.DatabaseName);
+                    tables = SqlServerTableDataBll.Get(strConnectString, model.DatabaseName);
                     break;
             }
 
@@ -136,7 +164,7 @@ namespace ManagerWeb.Controllers
             switch (model.DatabaseType)
             {
                 case DatabaseType.MySql:
-                    IList<Model.MySql.MySqlTableColumnInfo> tableColumnInfos = new DataBll.MySql.MySqlTableDataBll().GetColumnInfo(strConnectString, model.DatabaseName, model.TableName);
+                    IList<Model.MySql.MySqlTableColumnInfo> tableColumnInfos = MySqlTableDataBll.GetColumnInfo(strConnectString, model.DatabaseName, model.TableName);
                     tableColumns.Columns = tableColumnInfos.Select(x => new Models.TableColumnInfoViewModel()
                     {
                         Name = x.COLUMN_NAME
@@ -153,7 +181,7 @@ namespace ManagerWeb.Controllers
                     break;
                 case DatabaseType.SqlServer:
                     IList<Model.SqlServer.SqlServerTableColumnInfo> sqlServerColumnInfos =
-                        new DataBll.SqlServer.SqlServerTableDataBll().GetColumns(strConnectString, model.TableName);
+                        SqlServerTableDataBll.GetColumns(strConnectString, model.TableName);
                     if (null != sqlServerColumnInfos)
                     {
                         tableColumns.Columns = sqlServerColumnInfos.Select(x => new Models.TableColumnInfoViewModel()

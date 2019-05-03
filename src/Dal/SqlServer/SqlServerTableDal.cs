@@ -6,7 +6,10 @@ using System.Text;
 
 namespace Dal.SqlServer
 {
-    public sealed class SqlServerTableDal : BaseSqlServerDal
+    /// <summary>
+    /// SqlServer 表 数据访问层
+    /// </summary>
+    public sealed class SqlServerTableDal : BaseSqlServerDal, IDal.SqlServer.ISqlServerTableDal
     {
         protected override string TableName => throw new NotImplementedException();
 
@@ -14,6 +17,15 @@ namespace Dal.SqlServer
         /// 获取所有数据库表名称
         /// </summary>
         /// <param name="argDbConnectString">数据库连接字符串</param>
+        /// <returns></returns>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <author>刘迪</author>
+        /// <createtime>2019-05-03</createtime>
+        /// <updator></updator>
+        /// <updatetime></updatetime>
+        /// <description></description>
         public IList<String> Get(String argDbConnectString, String argDbName)
         {
             IList<String> list = null;
@@ -43,6 +55,15 @@ namespace Dal.SqlServer
         /// </summary>
         /// <param name="argDbConnectString">数据库连接字符串</param>
         /// <param name="argTableName">表名称</param>
+        /// <returns></returns>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <author>刘迪</author>
+        /// <createtime>2019-05-03</createtime>
+        /// <updator></updator>
+        /// <updatetime></updatetime>
+        /// <description></description>
         public IList<Model.SqlServer.SqlServerTableColumnInfo> GetColumns(String argDbConnectString, String argTableName)
         {
             IList<Model.SqlServer.SqlServerTableColumnInfo> list = null;

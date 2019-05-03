@@ -8,7 +8,10 @@ using System.Text;
 namespace Dal.MySql
 {
 
-    public sealed class MySqlTableDal : BaseMySqlDal
+    /// <summary>
+    /// MySql 表 数据访问处理层
+    /// </summary>
+    public sealed class MySqlTableDal : BaseMySqlDal, IDal.MySql.IMySqlTableDal
     {
         /// <summary>
         /// 表名称
