@@ -10,8 +10,17 @@ namespace Bll.CodeTemplate
     /// </summary>
     public sealed class ModelCodeTemplateBll
     {
+        private IDataBll.CodeTemplate.IModelCodeTemplateDataBll ModelCodeTemplateDataBll { get; set; }
 
+        public ModelCodeTemplateBll(IDataBll.CodeTemplate.IModelCodeTemplateDataBll argModelCodeTemplateDataBll)
+        {
+            ModelCodeTemplateDataBll = argModelCodeTemplateDataBll;
+        }
 
+        public void Add()
+        {
+
+        }
 
     }
 }
