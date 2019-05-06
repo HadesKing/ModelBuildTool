@@ -86,6 +86,10 @@ namespace ManagerWeb
             #endregion
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+
+            //使用AutoMapper
+            IList<Code.EntityMap.ForwardProfile> profiles = new List<Code.EntityMap.ForwardProfile>();
+            profiles.Add(new Code.EntityMap.ForwardProfile());
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
