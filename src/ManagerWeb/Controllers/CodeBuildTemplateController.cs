@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ManagerWeb.Controllers
 {
-    public class ModelBuilderTemplateController : Controller
+    public class CodeBuildTemplateController : Controller
     {
         public IActionResult Index()
         {

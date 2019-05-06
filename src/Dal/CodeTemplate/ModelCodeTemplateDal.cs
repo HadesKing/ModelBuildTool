@@ -17,14 +17,14 @@ namespace Dal.CodeTemplate
     /// <updator></updator>
     /// <updatetime></updatetime>
     /// <description></description>
-    public sealed class ModelCodeTemplateDal : BaseModelBuildDal, IDal.CodeTemplate.IModelCodeTemplateDal
+    public sealed class CodeBuildTemplateDal : BaseModelBuildDal, IDal.CodeTemplate.ICodeBuildTemplateDal
     {
 
         /// <summary>
         /// 构造函数
         /// </summary>
         /// <param name="argDbConnectString"></param>
-        public ModelCodeTemplateDal(String argDbConnectString)
+        public CodeBuildTemplateDal(String argDbConnectString)
         {
             if(String.IsNullOrWhiteSpace(argDbConnectString))
             {
@@ -36,12 +36,12 @@ namespace Dal.CodeTemplate
         /// <summary>
         /// 需要操作的表名称
         /// </summary>
-        protected override string TableName => "ModelCodeTemplate";
+        protected override string TableName => "CodeBuildTemplate";
 
         /// <summary>
         /// 添加记录
         /// </summary>
-        /// <typeparam name="ModelCodeTemplate">待修改的记录</typeparam>
+        /// <typeparam name="CodeBuildTemplate">待修改的记录</typeparam>
         /// <param name="entity">实体类型</param>
         /// <returns>受影响的行数</returns>
         /// <remarks>
@@ -52,7 +52,7 @@ namespace Dal.CodeTemplate
         /// <updator></updator>
         /// <updatetime></updatetime>
         /// <description></description>
-        public Int32 Add<ModelCodeTemplate>(ModelCodeTemplate entity)
+        public Int32 Add<CodeBuildTemplate>(CodeBuildTemplate entity)
         {
             String strTmpSql = @"
 INSERT INTO {0} (
@@ -94,7 +94,7 @@ VALUES
         /// <summary>
         /// 删除记录
         /// </summary>
-        /// <typeparam name="ModelCodeTemplate">待修改的记录</typeparam>
+        /// <typeparam name="CodeBuildTemplate">待修改的记录</typeparam>
         /// <param name="entity">实体类型</param>
         /// <returns>受影响的行数</returns>
         /// <remarks>
@@ -105,12 +105,12 @@ VALUES
         /// <updator></updator>
         /// <updatetime></updatetime>
         /// <description></description>
-        public Int32 Delete<ModelCodeTemplate>(ModelCodeTemplate entity)
+        public Int32 Delete<CodeBuildTemplate>(CodeBuildTemplate entity)
         {
             String strTmpSql = @"
 DELETE 
 FROM
-  `codebuild`.`modelcodetemplate` 
+  `codebuild`.`CodeBuildTemplate` 
 WHERE `Identity` = @Identity ;
 ";
             String strSql = String.Format(strTmpSql, TableName);
@@ -122,7 +122,7 @@ WHERE `Identity` = @Identity ;
         /// <summary>
         /// 修改记录
         /// </summary>
-        /// <typeparam name="ModelCodeTemplate">待修改的记录</typeparam>
+        /// <typeparam name="CodeBuildTemplate">待修改的记录</typeparam>
         /// <param name="entity">实体类型</param>
         /// <returns>受影响的行数</returns>
         /// <remarks>
@@ -133,7 +133,7 @@ WHERE `Identity` = @Identity ;
         /// <updator></updator>
         /// <updatetime></updatetime>
         /// <description></description>
-        public Int32 Update<ModelCodeTemplate>(ModelCodeTemplate entity)
+        public Int32 Update<CodeBuildTemplate>(CodeBuildTemplate entity)
         {
             String strTmpSql = @"
 UPDATE 
@@ -159,7 +159,7 @@ WHERE `Identity` = @Identity;
         /// <summary>
         /// 更新记录是否可用
         /// </summary>
-        /// <typeparam name="ModelCodeTemplate">待修改的记录</typeparam>
+        /// <typeparam name="CodeBuildTemplate">待修改的记录</typeparam>
         /// <param name="entity">实体类型</param>
         /// <returns>受影响的行数</returns>
         /// <remarks>
@@ -170,7 +170,7 @@ WHERE `Identity` = @Identity;
         /// <updator></updator>
         /// <updatetime></updatetime>
         /// <description></description>
-        public Int32 UpdateIsEnable<ModelCodeTemplate>(ModelCodeTemplate entity)
+        public Int32 UpdateIsEnable<CodeBuildTemplate>(CodeBuildTemplate entity)
         {
             String strTmpSql = @"
 UPDATE 

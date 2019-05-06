@@ -30,7 +30,7 @@ CREATE TABLE
   PRIMARY KEY (`id`)
 ) ENGINE=INNODB CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
-CREATE TABLE `codebuild`.`ModelCodeTemplate`(  
+CREATE TABLE `codebuild`.`CodeBuildTemplate`(  
   `Id` BIGINT NOT NULL AUTO_INCREMENT,
   `Identity` VARCHAR(64),
   `Name` VARCHAR(128),

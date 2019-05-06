@@ -8,13 +8,13 @@ namespace Bll.CodeTemplate
     /// <summary>
     /// 
     /// </summary>
-    public sealed class ModelCodeTemplateBll
+    public sealed class CodeBuildTemplateBll
     {
-        private IDataBll.CodeTemplate.IModelCodeTemplateDataBll ModelCodeTemplateDataBll { get; set; }
+        private IDataBll.CodeTemplate.ICodeBuildTemplateDataBll CodeBuildTemplateDataBll { get; set; }
 
-        public ModelCodeTemplateBll(IDataBll.CodeTemplate.IModelCodeTemplateDataBll argModelCodeTemplateDataBll)
+        public CodeBuildTemplateBll(IDataBll.CodeTemplate.ICodeBuildTemplateDataBll argCodeBuildTemplateDataBll)
         {
-            ModelCodeTemplateDataBll = argModelCodeTemplateDataBll;
+            CodeBuildTemplateDataBll = argCodeBuildTemplateDataBll;
         }
 
         public void Add()

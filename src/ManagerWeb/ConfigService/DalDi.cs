@@ -35,9 +35,9 @@ namespace ManagerWeb.ConfigService
             //DAL.User.UserInfoDal userInfoDal = new DAL.User.UserInfoDal(strMasterConnectString);
             //Services.AddTransient<IDAL.User.IUserInfoDal, DAL.User.UserInfoDal>(x => userInfoDal);      //用户信息管理
 
-            //Dal.CodeTemplate.ModelCodeTemplateDal
-            Services.AddTransient<IDal.CodeTemplate.IModelCodeTemplateDal, Dal.CodeTemplate.ModelCodeTemplateDal>(
-                x => new Dal.CodeTemplate.ModelCodeTemplateDal(strMasterConnectString)
+            //Dal.CodeTemplate.CodeBuildTemplateDal
+            Services.AddTransient<IDal.CodeTemplate.ICodeBuildTemplateDal, Dal.CodeTemplate.CodeBuildTemplateDal>(
+                x => new Dal.CodeTemplate.CodeBuildTemplateDal(strMasterConnectString)
                 );
 
             Services.AddTransient<IDal.MySql.IMySqlDatabaseDal, Dal.MySql.MySqlDatabaseDal>();

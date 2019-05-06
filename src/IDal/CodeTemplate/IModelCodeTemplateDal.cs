@@ -16,7 +16,7 @@ namespace IDal.CodeTemplate
     /// <updator></updator>
     /// <updatetime></updatetime>
     /// <description></description>
-    public interface IModelCodeTemplateDal : IAdd, IDelete, IUpdate
+    public interface ICodeBuildTemplateDal : IAdd, IDelete, IUpdate
     {
 
         /// <summary>

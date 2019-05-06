@@ -9,13 +9,13 @@ namespace IDataBll.CodeTemplate
     /// <summary>
     /// Model 代码 模板 数据业务逻辑处理层
     /// </summary>
-    public interface IModelCodeTemplateDataBll
+    public interface ICodeBuildTemplateDataBll
     {
 
         /// <summary>
         /// 添加记录
         /// </summary>
-        /// <typeparam name="ModelCodeTemplate">待修改的记录</typeparam>
+        /// <typeparam name="CodeBuildTemplate">待修改的记录</typeparam>
         /// <param name="entity">实体类型</param>
         /// <returns>受影响的行数</returns>
         /// <remarks>
@@ -26,12 +26,12 @@ namespace IDataBll.CodeTemplate
         /// <updator></updator>
         /// <updatetime></updatetime>
         /// <description></description>
-        Int32 Add(ModelCodeTemplate entity);
+        Int32 Add(CodeBuildTemplate entity);
 
         /// <summary>
         /// 删除记录
         /// </summary>
-        /// <typeparam name="ModelCodeTemplate">待修改的记录</typeparam>
+        /// <typeparam name="CodeBuildTemplate">待修改的记录</typeparam>
         /// <param name="entity">实体类型</param>
         /// <returns>受影响的行数</returns>
         /// <remarks>
@@ -42,12 +42,12 @@ namespace IDataBll.CodeTemplate
         /// <updator></updator>
         /// <updatetime></updatetime>
         /// <description></description>
-        Int32 Delete(ModelCodeTemplate entity);
+        Int32 Delete(CodeBuildTemplate entity);
 
         /// <summary>
         /// 修改记录
         /// </summary>
-        /// <typeparam name="ModelCodeTemplate">待修改的记录</typeparam>
+        /// <typeparam name="CodeBuildTemplate">待修改的记录</typeparam>
         /// <param name="entity">实体类型</param>
         /// <returns>受影响的行数</returns>
         /// <remarks>
@@ -58,12 +58,12 @@ namespace IDataBll.CodeTemplate
         /// <updator></updator>
         /// <updatetime></updatetime>
         /// <description></description>
-        Int32 Update(ModelCodeTemplate entity);
+        Int32 Update(CodeBuildTemplate entity);
         
         /// <summary>
         /// 更新记录是否可用
         /// </summary>
-        /// <typeparam name="ModelCodeTemplate">待修改的记录</typeparam>
+        /// <typeparam name="CodeBuildTemplate">待修改的记录</typeparam>
         /// <param name="entity">实体类型</param>
         /// <returns>受影响的行数</returns>
         /// <remarks>
@@ -74,7 +74,7 @@ namespace IDataBll.CodeTemplate
         /// <updator></updator>
         /// <updatetime></updatetime>
         /// <description></description>
-        Int32 UpdateIsEnable(ModelCodeTemplate entity);
+        Int32 UpdateIsEnable(CodeBuildTemplate entity);
 
     }
 }

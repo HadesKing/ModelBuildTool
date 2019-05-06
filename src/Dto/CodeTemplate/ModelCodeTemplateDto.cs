@@ -16,9 +16,9 @@ namespace Dto.CodeTemplate
     /// <updator></updator>
     /// <updatetime></updatetime>
     /// <description></description>
-    public sealed class ModelCodeTemplateDto
+    public sealed class CodeBuildTemplateDto
     {
-        public ModelCodeTemplateDto()
+        public CodeBuildTemplateDto()
         {
             IsEnable = 1;
         }

@@ -5,22 +5,22 @@ using Model.CodeTemplate;
 
 namespace DataBll.CodeTemplate
 {
-    public sealed class ModelCodeTemplateDataBll : IDataBll.CodeTemplate.IModelCodeTemplateDataBll
+    public sealed class CodeBuildTemplateDataBll : IDataBll.CodeTemplate.ICodeBuildTemplateDataBll
     {
 
-        private readonly IDal.CodeTemplate.IModelCodeTemplateDal Dal;
+        private readonly IDal.CodeTemplate.ICodeBuildTemplateDal Dal;
 
-        public ModelCodeTemplateDataBll(
-            IDal.CodeTemplate.IModelCodeTemplateDal argModelCodeTemplateDal
+        public CodeBuildTemplateDataBll(
+            IDal.CodeTemplate.ICodeBuildTemplateDal argCodeBuildTemplateDal
             )
         {
-            Dal = argModelCodeTemplateDal;
+            Dal = argCodeBuildTemplateDal;
         }
 
         /// <summary>
         /// 添加记录
         /// </summary>
-        /// <typeparam name="ModelCodeTemplate">待修改的记录</typeparam>
+        /// <typeparam name="CodeBuildTemplate">待修改的记录</typeparam>
         /// <param name="entity">实体类型</param>
         /// <returns>受影响的行数</returns>
         /// <remarks>
@@ -31,7 +31,7 @@ namespace DataBll.CodeTemplate
         /// <updator></updator>
         /// <updatetime></updatetime>
         /// <description></description>
-        public Int32 Add(ModelCodeTemplate entity)
+        public Int32 Add(CodeBuildTemplate entity)
         {
             if (null == entity) return 0;
 
@@ -42,7 +42,7 @@ namespace DataBll.CodeTemplate
         /// <summary>
         /// 删除记录
         /// </summary>
-        /// <typeparam name="ModelCodeTemplate">待修改的记录</typeparam>
+        /// <typeparam name="CodeBuildTemplate">待修改的记录</typeparam>
         /// <param name="entity">实体类型</param>
         /// <returns>受影响的行数</returns>
         /// <remarks>
@@ -53,7 +53,7 @@ namespace DataBll.CodeTemplate
         /// <updator></updator>
         /// <updatetime></updatetime>
         /// <description></description>
-        public Int32 Delete(ModelCodeTemplate entity)
+        public Int32 Delete(CodeBuildTemplate entity)
         {
             if (null == entity || String.IsNullOrWhiteSpace(entity.Identity)) return 0;
 
@@ -63,7 +63,7 @@ namespace DataBll.CodeTemplate
         /// <summary>
         /// 修改记录
         /// </summary>
-        /// <typeparam name="ModelCodeTemplate">待修改的记录</typeparam>
+        /// <typeparam name="CodeBuildTemplate">待修改的记录</typeparam>
         /// <param name="entity">实体类型</param>
         /// <returns>受影响的行数</returns>
         /// <remarks>
@@ -74,7 +74,7 @@ namespace DataBll.CodeTemplate
         /// <updator></updator>
         /// <updatetime></updatetime>
         /// <description></description>
-        public Int32 Update(ModelCodeTemplate entity)
+        public Int32 Update(CodeBuildTemplate entity)
         {
             if (null == entity || String.IsNullOrWhiteSpace(entity.Identity)) return 0;
 
@@ -84,7 +84,7 @@ namespace DataBll.CodeTemplate
         /// <summary>
         /// 更新记录是否可用
         /// </summary>
-        /// <typeparam name="ModelCodeTemplate">待修改的记录</typeparam>
+        /// <typeparam name="CodeBuildTemplate">待修改的记录</typeparam>
         /// <param name="entity">实体类型</param>
         /// <returns>受影响的行数</returns>
         /// <remarks>
@@ -95,7 +95,7 @@ namespace DataBll.CodeTemplate
         /// <updator></updator>
         /// <updatetime></updatetime>
         /// <description></description>
-        public Int32 UpdateIsEnable(ModelCodeTemplate entity)
+        public Int32 UpdateIsEnable(CodeBuildTemplate entity)
         {
             if (null == entity || String.IsNullOrWhiteSpace(entity.Identity)) return 0;
 

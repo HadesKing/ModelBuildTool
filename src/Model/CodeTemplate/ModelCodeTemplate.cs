@@ -15,9 +15,9 @@ namespace Model.CodeTemplate
     /// <updator></updator>
     /// <updatetime></updatetime>
     /// <description></description>
-    public sealed partial class ModelCodeTemplate
+    public sealed partial class CodeBuildTemplate
     {
-        public ModelCodeTemplate()
+        public CodeBuildTemplate()
         {
             IsEnable = 1;
         }

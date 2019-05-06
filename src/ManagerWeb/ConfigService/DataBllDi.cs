@@ -28,13 +28,13 @@ namespace ManagerWeb.ConfigService
 
             //Services.AddTransient<IDataBLL.User.IUserInfoDataBll, DataBLL.User.UserInfoDataBll>();      //用户信息管理
             //ServiceProvider serviceProvider = Services.BuildServiceProvider();
-            //IDal.CodeTemplate.IModelCodeTemplateDal modelCodeTemplateDal = serviceProvider.GetService<IDal.CodeTemplate.IModelCodeTemplateDal>();
+            //IDal.CodeTemplate.ICodeBuildTemplateDal CodeBuildTemplateDal = serviceProvider.GetService<IDal.CodeTemplate.ICodeBuildTemplateDal>();
 
-            //Services.AddTransient<IModelCodeTemplateDataBll, ModelCodeTemplateDataBll>(
-            //    x => new ModelCodeTemplateDataBll(modelCodeTemplateDal)
+            //Services.AddTransient<ICodeBuildTemplateDataBll, CodeBuildTemplateDataBll>(
+            //    x => new CodeBuildTemplateDataBll(CodeBuildTemplateDal)
             //    );
 
-            Services.AddTransient<IModelCodeTemplateDataBll, ModelCodeTemplateDataBll>();
+            Services.AddTransient<ICodeBuildTemplateDataBll, CodeBuildTemplateDataBll>();
             Services.AddTransient<IDataBll.MySql.IMySqlDatabaseDataBll, DataBll.MySql.MySqlDatabaseDataBll>();
             Services.AddTransient<IDataBll.MySql.IMySqlTableDataBll, DataBll.MySql.MySqlTableDataBll>();
             Services.AddTransient<IDataBll.SqlServer.ISqlServerDatabaseDataBll, DataBll.SqlServer.SqlServerDatabaseDataBll>();

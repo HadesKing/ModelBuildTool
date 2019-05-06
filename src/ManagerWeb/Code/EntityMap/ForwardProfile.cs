@@ -29,7 +29,7 @@ namespace ManagerWeb.Code.EntityMap
              * 说明：
              *     这里的映射，应该写在服务层中，但是由于没有服务层，所以写在了UI层
              */
-            CreateMap<Dto.CodeTemplate.ModelCodeTemplateDto, Model.CodeTemplate.ModelCodeTemplate>().ReverseMap();      //调用ReverseMap方法，设置为反向
+            CreateMap<Dto.CodeTemplate.CodeBuildTemplateDto, Model.CodeTemplate.CodeBuildTemplate>().ReverseMap();      //调用ReverseMap方法，设置为反向
 
 
         }

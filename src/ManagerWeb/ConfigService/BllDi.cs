@@ -29,7 +29,7 @@ namespace ManagerWeb.ConfigService
         public override void Init()
         {
 
-            Services.AddTransient<Bll.CodeTemplate.ModelCodeTemplateBll>();
+            Services.AddTransient<Bll.CodeTemplate.CodeBuildTemplateBll>();
 
         }
 
