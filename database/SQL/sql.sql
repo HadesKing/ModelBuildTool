@@ -10,7 +10,7 @@ USE CodeBuild;
 
 CREATE TABLE 
   `codebuild`.`DbConnectionString`(  
-  `Id` BIGINT NOT NULL AUTO_INCREMENT COMMENT '自增',
+  `Id` BIGINT NOT NULL AUTO_INCREMENT PRIMARY KEY COMMENT '自增',
   `Identity` varchar(64) NOT NULL COMMENT '身份认证',
   `Name` varchar(128) DEFAULT NULL COMMENT '配置名称',
   `DbName` varchar(128) DEFAULT NULL COMMENT '数据库名称',
@@ -26,14 +26,17 @@ CREATE TABLE
   `CreateTime` datetime DEFAULT NULL COMMENT '创建时间',
   `CreateBy` varchar(64) DEFAULT NULL COMMENT '创建人',
   `LastUpdateTime` datetime DEFAULT NULL COMMENT '最后修改时间',
-  `UpdateBy` varchar(64) DEFAULT NULL COMMENT '最后修改人',
-  PRIMARY KEY (`id`)
+  `UpdateBy` varchar(64) DEFAULT NULL COMMENT '最后修改人'
 ) ENGINE=INNODB CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+/*
+	代码模板
+*/
 CREATE TABLE `codebuild`.`CodeBuildTemplate`(  
-  `Id` BIGINT NOT NULL AUTO_INCREMENT,
+  `Id` BIGINT NOT NULL AUTO_INCREMENT PRIMARY KEY,
   `Identity` VARCHAR(64),
   `Name` VARCHAR(128),
+  `Type` VARCHAR(64) NOT NULL,
   `AuthorInfo` VARCHAR(512),
   `UsingInfo` VARCHAR(512),
   `NamespaceInfo` VARCHAR(512),
@@ -43,7 +46,6 @@ CREATE TABLE `codebuild`.`CodeBuildTemplate`(
   `CreateTime` DATETIME,
   `CreateBy` VARCHAR(64),
   `LastUpdateTime` DATETIME,
-  `UpdateBy` VARCHAR(64),
-  PRIMARY KEY (`Id`)
+  `UpdateBy` VARCHAR(64)
 ) ENGINE=INNODB CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 

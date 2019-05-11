@@ -16,7 +16,9 @@ namespace IDal.CodeTemplate
     /// <updator></updator>
     /// <updatetime></updatetime>
     /// <description></description>
-    public interface ICodeBuildTemplateDal : IAdd, IDelete, IUpdate
+    public interface ICodeBuildTemplateDal : IAdd<Model.CodeTemplate.CodeBuildTemplate>
+        , IDelete<Model.CodeTemplate.CodeBuildTemplate>
+        , IUpdate<Model.CodeTemplate.CodeBuildTemplate>
     {
 
         /// <summary>
@@ -31,7 +33,7 @@ namespace IDal.CodeTemplate
         /// <updator></updator>
         /// <updatetime></updatetime>
         /// <description></description>
-        Int32 UpdateIsEnable<TEntity>(TEntity entity);
+        Int32 UpdateIsEnable(Model.CodeTemplate.CodeBuildTemplate entity);
 
     }
 }

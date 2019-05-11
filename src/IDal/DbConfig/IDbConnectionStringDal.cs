@@ -16,7 +16,7 @@ namespace IDal.DbConfig
     /// <updator></updator>
     /// <updatetime></updatetime>
     /// <description></description>
-    public interface IDbConnectionStringDal : IAdd, IDelete
+    public interface IDbConnectionStringDal : IAdd<Model.DbConfig.DbConnectionString>, IDelete<Model.DbConfig.DbConnectionString>
     {
 
 

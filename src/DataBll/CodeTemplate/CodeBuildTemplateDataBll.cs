@@ -5,6 +5,17 @@ using Model.CodeTemplate;
 
 namespace DataBll.CodeTemplate
 {
+    /// <summary>
+    /// 代码生成模板 数据业务逻辑处理类
+    /// </summary>
+    /// <remarks>
+    /// 
+    /// </remarks>
+    /// <author>刘迪</author>
+    /// <createtime>2019-05-11</createtime>
+    /// <updator></updator>
+    /// <updatetime></updatetime>
+    /// <description></description>
     public sealed class CodeBuildTemplateDataBll : IDataBll.CodeTemplate.ICodeBuildTemplateDataBll
     {
 
@@ -57,7 +68,7 @@ namespace DataBll.CodeTemplate
         {
             if (null == entity || String.IsNullOrWhiteSpace(entity.Identity)) return 0;
 
-            return Dal.Add(entity);
+            return Dal.Delete(entity);
         }
 
         /// <summary>
@@ -78,7 +89,7 @@ namespace DataBll.CodeTemplate
         {
             if (null == entity || String.IsNullOrWhiteSpace(entity.Identity)) return 0;
 
-            return Dal.Add(entity);
+            return Dal.Update(entity);
         }
 
         /// <summary>
@@ -99,7 +110,7 @@ namespace DataBll.CodeTemplate
         {
             if (null == entity || String.IsNullOrWhiteSpace(entity.Identity)) return 0;
 
-            return Dal.Add(entity);
+            return Dal.UpdateIsEnable(entity);
         }
 
 

@@ -10,7 +10,19 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace ManagerWeb.Controllers
 {
-    public class ModelBuilderController : Controller
+
+    /// <summary>
+    /// Model 类 生成类
+    /// </summary>
+    /// <remarks>
+    /// 
+    /// </remarks>
+    /// <author>刘迪</author>
+    /// <createtime>2019-05-07</createtime>
+    /// <updator></updator>
+    /// <updatetime></updatetime>
+    /// <description></description>
+    public class ModelBuilderController : BaseController
     {
         private IDataBll.MySql.IMySqlTableDataBll MySqlTableDataBll { get; set; }
 

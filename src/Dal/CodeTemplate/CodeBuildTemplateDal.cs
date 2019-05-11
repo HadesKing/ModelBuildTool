@@ -52,12 +52,13 @@ namespace Dal.CodeTemplate
         /// <updator></updator>
         /// <updatetime></updatetime>
         /// <description></description>
-        public Int32 Add<CodeBuildTemplate>(CodeBuildTemplate entity)
+        public Int32 Add(CodeBuildTemplate entity)
         {
             String strTmpSql = @"
 INSERT INTO {0} (
   `Identity`,
   `Name`,
+  `Type`,
   `AuthorInfo`,
   `UsingInfo`,
   `NamespaceInfo`,
@@ -73,6 +74,7 @@ VALUES
   (
     @Identity,
     @Name,
+    @Type,
     @AuthorInfo,
     @UsingInfo,
     @NamespaceInfo,
@@ -84,6 +86,7 @@ VALUES
     @LastUpdateTime,
     @UpdateBy
   ) ;
+
 ";
             String strSql = String.Format(strTmpSql, TableName);
 
@@ -105,13 +108,13 @@ VALUES
         /// <updator></updator>
         /// <updatetime></updatetime>
         /// <description></description>
-        public Int32 Delete<CodeBuildTemplate>(CodeBuildTemplate entity)
+        public Int32 Delete(CodeBuildTemplate entity)
         {
             String strTmpSql = @"
 DELETE 
 FROM
   `codebuild`.`CodeBuildTemplate` 
-WHERE `Identity` = @Identity ;
+WHERE `Id` = @Id ;
 ";
             String strSql = String.Format(strTmpSql, TableName);
 
@@ -133,7 +136,7 @@ WHERE `Identity` = @Identity ;
         /// <updator></updator>
         /// <updatetime></updatetime>
         /// <description></description>
-        public Int32 Update<CodeBuildTemplate>(CodeBuildTemplate entity)
+        public Int32 Update(CodeBuildTemplate entity)
         {
             String strTmpSql = @"
 UPDATE 
@@ -148,7 +151,7 @@ SET
   `IsEnable` = @IsEnable,
   `LastUpdateTime` = @LastUpdateTime,
   `UpdateBy` = @UpdateBy
-WHERE `Identity` = @Identity;
+WHERE `Id` = @Id;
 ";
             String strSql = String.Format(strTmpSql, TableName);
 
@@ -170,14 +173,14 @@ WHERE `Identity` = @Identity;
         /// <updator></updator>
         /// <updatetime></updatetime>
         /// <description></description>
-        public Int32 UpdateIsEnable<CodeBuildTemplate>(CodeBuildTemplate entity)
+        public Int32 UpdateIsEnable(CodeBuildTemplate entity)
         {
             String strTmpSql = @"
 UPDATE 
   {0}
 SET
   `IsEnable` = @IsEnable
-WHERE `Identity` = @Identity;
+WHERE `Id` = @Id;
 ";
             String strSql = String.Format(strTmpSql, TableName);
 
