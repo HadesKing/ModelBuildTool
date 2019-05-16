@@ -54,7 +54,7 @@ namespace ManagerWeb.Controllers
         /// <updator></updator>
         /// <updatetime></updatetime>
         /// <description></description>
-        public IActionResult Add()
+        public IActionResult Add(Models.CodeBuildTemplateViewModel model)
         {
 
 
