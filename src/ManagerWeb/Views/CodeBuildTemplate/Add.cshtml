@@ -15,19 +15,83 @@
                 <div class="box-body">
                     <div class="form-group">
                         <label for="Name">名称</label>
-                        <input type="text" class="form-control" id="Name" placeholder="请输入名称..." />
+                        <input type="text" class="form-control" id="Name" placeholder="Please enter..." />
+                    </div>
+                    <div class="form-group">
+                        <label for="UsingInfo">using 信息</label>
+                        <textarea class="form-control" rows="3" id="UsingInfo" placeholder="Please enter..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="NamespaceInfo">namespace 信息</label>
+                        <textarea class="form-control" rows="3" id="NamespaceInfo" placeholder="Please enter..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="ClassInfo">属性 信息</label>
+                        <textarea class="form-control" rows="3" id="ClassInfo" placeholder="Please enter..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="PropertyInfo">class 信息</label>
+                        <textarea class="form-control" rows="3" id="PropertyInfo" placeholder="Please enter..."></textarea>
                     </div>
                     <div class="checkbox">
                         <label>
-                            <input type="checkbox" checked> 是否启用
+                            <input id="IsEnable" type="checkbox" checked> 是否启用
                         </label>
                     </div>
                 </div>
                 <div class="box-footer">
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <div>
+                        <button type="submit" class="btn btn-primary" onclick="return Add(false);">Submit</button>
+                    </div>
                 </div>
             </form>
         </div>
     </div>
 </div>
 
+@section Footer{
+    <script type="text/javascript">
+
+        function Preview() {
+
+        }
+        //添加
+        function Add(isAddNext) {
+            var url = _codeBuildTemplateAddUrl;       
+            var name = $("#Name").val();  
+            var usingInfo = $("#UsingInfo").val();
+            var namespaceInfo = $("#NamespaceInfo").val();
+            var classInfo = $("#ClassInfo").val();
+            var propertyInfo = $("#PropertyInfo").val();
+            var isEnable = 0;
+            if($("#IsEnable").is(":checked")) {
+                isEnable = 1;
+            }
+            var data = JSON.stringify(
+                {
+                    "Name": name
+                    , "UsingInfo": usingInfo
+                    , "NamespaceInfo": namespaceInfo
+                    , "ClassInfo": classInfo
+                    , "PropertyInfo": propertyInfo
+                    , "IsEnable": isEnable
+                }
+            );
+
+            SendHttpRequest("POST", url, "json", data, function (result) {
+                var jsonResult = JSON.stringify(result);
+                if (jsonResult.IsSuccess) {
+                    ShowSuccessMessage(jsonResult.Description);
+                    if (isAddNext) window.location.reload();        //重新加载页面
+                }
+                else {
+                    ShowErrorMessage(jsonResult.Description);
+                    return false;
+                }
+            })
+        }
+
+
+    </script>
+
+}

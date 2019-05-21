@@ -197,40 +197,6 @@
             });
 
         });
-
-        function SendHttpRequest(method, url, dataType, data, callback) {
-
-            $.ajax({
-                url: url
-                , type: method
-                , async: true
-                , cache: true
-                , contentType: "application/json" //默认值是application/x-www-form-urlencoded
-                , dataType: dataType
-                , data: data
-                , error: function (XMLHttpRequest, textStatus, errorThrown) {
-                    layer.msg('Faiure');
-                    //layer.msg('操作失败：' + errorThrown, {
-                    //    time: 3000 //2s后自动关闭
-                    //    //, btn: ['明白了', '知道了']
-                    //});
-                }
-                , success: function (result) {
-                    layer.msg('Success');
-                    callback(result);
-                    //if (result != undefined && result.length > 0) {
-                    //    $.each(result, function (name, value) {
-                    //        $("#slDatabase").append("<option value='" + value + "'>" + value + "</option>");
-                    //    });
-                    //}
-                }
-            });
-
-        }
-
-        function ShowErrorMessage(message) {
-            layer.alert(message, { icon: 2, title: "错误" });
-        }
     </script>
 
 }
