@@ -46,6 +46,33 @@ namespace ManagerWeb.Controllers
         }
 
         /// <summary>
+        /// 添加/编辑模板页
+        /// </summary>
+        /// <returns></returns>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <author>刘迪</author>
+        /// <createtime>2019-05-07</createtime>
+        /// <updator></updator>
+        /// <updatetime></updatetime>
+        /// <description></description>
+        [HttpGet]
+        public IActionResult AddOrEdit(Models.CodeBuildTemplateViewModel model)
+        {
+            if(null == model || model.Id == 0)
+            {
+                ViewData["Title"] = "【Add】";
+            }
+            else
+            {
+                ViewData["Title"] = "【Edit】";
+            }
+
+            return View(model);
+        }
+
+        /// <summary>
         /// 添加模板页
         /// </summary>
         /// <returns></returns>
@@ -64,6 +91,20 @@ namespace ManagerWeb.Controllers
             try
             {
                 Model.CodeTemplate.CodeBuildTemplate codeBuildTemplate = new Model.CodeTemplate.CodeBuildTemplate();
+                String strAuthor = "admin";
+                //TODO:这里暂时写死
+                codeBuildTemplate.AuthorInfo = strAuthor;
+                codeBuildTemplate.ClassInfo = model.ClassInfo;
+                codeBuildTemplate.CreateBy = strAuthor;
+                codeBuildTemplate.CreateTime = System.DateTime.UtcNow;
+                codeBuildTemplate.Identity = Guid.NewGuid().ToString();
+                codeBuildTemplate.IsEnable = (Int16)(model.IsEnable ? 1 : 0);
+                //codeBuildTemplate.LastUpdateTime = System.DateTime.UtcNow;
+                codeBuildTemplate.Name = model.Name;
+                codeBuildTemplate.NamespaceInfo = model.NamespaceInfo;
+                codeBuildTemplate.PropertyInfo = model.PropertyInfo;
+                //codeBuildTemplate.UpdateBy = strAuthor;
+                codeBuildTemplate.UsingInfo = model.UsingInfo;
 
                 CodeBuildTemplateDataBll.Add(codeBuildTemplate);
                 response.IsSuccess = true;

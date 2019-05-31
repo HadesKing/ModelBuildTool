@@ -1,0 +1,130 @@
+﻿
+@{
+    ViewData["Title"] = "Add";
+    Layout = "~/Views/Shared/_Main.cshtml";
+}
+
+@model ManagerWeb.Models.CodeBuildTemplateViewModel
+
+@section Header{
+    <link rel="stylesheet" href="@Url.Content("~/lib/AdminLTE/plugins/iCheck/all.css")">
+}
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="box box-primary">
+            <div class="box-header with-border">
+                <h3 class="box-title">@ViewData["Title"]</h3>
+            </div>
+            <form role="form">
+                <div class="box-body">
+                    <div class="form-group">
+                        <label for="Name">名称</label>
+                        @*<input type="text" class="form-control" id="Name" placeholder="Please enter..." />*@
+                        @Html.TextBoxFor(x => x.Name, new { @class = "form-control", @placeholder = "Please enter..." })
+                    </div>
+                    <div class="form-group">
+                        <label for="UsingInfo">using 信息</label>
+                        @*<textarea class="form-control" rows="3" id="UsingInfo" placeholder="Please enter..."></textarea>*@
+                        @Html.TextAreaFor(x => x.UsingInfo, new { @class = "form-control", @rows = "3", @placeholder = "Please enter..." })
+                    </div>
+                    <div class="form-group">
+                        <label for="NamespaceInfo">namespace 信息</label>
+                        @*<textarea class="form-control" rows="3" id="NamespaceInfo" placeholder="Please enter..."></textarea>*@
+                        @Html.TextAreaFor(x => x.NamespaceInfo, new { @class = "form-control", @rows = "3", @placeholder = "Please enter..." })
+                    </div>
+                    <div class="form-group">
+                        <label for="ClassInfo">属性 信息</label>
+                        @*<textarea class="form-control" rows="3" id="ClassInfo" placeholder="Please enter..."></textarea>*@
+                        @Html.TextAreaFor(x => x.ClassInfo, new { @class = "form-control", @rows = "3", @placeholder = "Please enter..." })
+                    </div>
+                    <div class="form-group">
+                        <label for="PropertyInfo">class 信息</label>
+                        @*<textarea class="form-control" rows="3" id="PropertyInfo" placeholder="Please enter..."></textarea>*@
+                        @Html.TextAreaFor(x => x.PropertyInfo, new { @class = "form-control", @rows = "3", @placeholder = "Please enter..." })
+                    </div>
+                    <div class="form-group">
+                        @*
+                            <label>
+                                <input id="IsEnable" type="checkbox" checked> 是否启用
+                                            @Html.CheckBoxFor(x => x.IsEnable, new { @checked = "checked" })
+
+                                            </label>
+                        *@
+                        <label>
+                            @if (null != Model && Model.IsEnable == false)
+                            {
+                                <input type="checkbox" class="flat-red" id="IsEnable">
+                            }
+                            else
+                            {
+                                <input type="checkbox" class="flat-red" checked id="IsEnable">
+                            }
+                        <span style="padding-left:3px;" class="form-inline">启&nbsp;&nbsp;用</span>
+                        </label>
+                    </div>
+                   
+                </div>
+                <div class="box-footer">
+                    <div>
+                        <button type="submit" class="btn btn-primary" onclick="return Add(false);">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Footer{
+    <script src="@Url.Content("~/lib/AdminLTE/plugins/iCheck/icheck.min.js")"></script>
+    <script type="text/javascript">
+
+        function Preview() {
+
+        }
+        //添加
+        function Add(isAddNext) {
+            var url = _codeBuildTemplateAddUrl;
+            var name = $("#Name").val();
+            var usingInfo = $("#UsingInfo").val();
+            var namespaceInfo = $("#NamespaceInfo").val();
+            var classInfo = $("#ClassInfo").val();
+            var propertyInfo = $("#PropertyInfo").val();
+            var isEnable = 0;
+            if ($("#IsEnable").is(":checked")) {
+                isEnable = 1;
+            }
+            var data = JSON.stringify(
+                {
+                    "Name": name
+                    , "UsingInfo": usingInfo
+                    , "NamespaceInfo": namespaceInfo
+                    , "ClassInfo": classInfo
+                    , "PropertyInfo": propertyInfo
+                    , "IsEnable": isEnable
+                }
+            );
+
+            SendHttpRequest("POST", url, "json", data, function (result) {
+                var jsonResult = JSON.stringify(result);
+                if (jsonResult.IsSuccess) {
+                    ShowSuccessMessage(jsonResult.Description);
+                    if (isAddNext) window.location.reload();        //重新加载页面
+                }
+                else {
+                    ShowErrorMessage(jsonResult.Description);
+                    return false;
+                }
+            })
+        }
+
+        $(function () {
+            //Flat red color scheme for iCheck
+            $('input[type="checkbox"].flat-red, input[type="radio"].flat-red').iCheck({
+                checkboxClass: 'icheckbox_flat-green',
+                radioClass: 'iradio_flat-green'
+            })
+        });
+    </script>
+
+}

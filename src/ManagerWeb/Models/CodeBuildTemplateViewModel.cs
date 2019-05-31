@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -19,7 +20,7 @@ namespace ManagerWeb.Models
         /// <summary>
         /// 自增字段
         /// </summary>
-        public String Id { get; set; }
+        public Int64 Id { get; set; }
 
         /// <summary>
         /// 身份标识
@@ -29,11 +30,13 @@ namespace ManagerWeb.Models
         /// <summary>
         /// 名称
         /// </summary>
+        [DisplayName("名称")]
         public String Name { get; set; }
-        
+
         /// <summary>
-        /// using信息
+        /// using 信息
         /// </summary>
+        [DisplayName("using 信息")]
         public String UsingInfo { get; set; }
 
         /// <summary>
@@ -54,7 +57,7 @@ namespace ManagerWeb.Models
         /// <summary>
         /// 是否启用
         /// </summary>
-        public Int16 IsEnable { get; set; }
+        public Boolean IsEnable { get; set; }
 
     }
 }
